@@ -1,0 +1,36 @@
+@use "reset";
+@use "fonts";
+@use "variables" as *;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: $minWidth;
+  font-family: $fontFamily;
+  font-size: $fontSize + px;
+  color:$mainColor;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+
+.bg {
+  background: url("../img/gulp.jpg");
+  width: 246px;
+  height: 138px;
+}
