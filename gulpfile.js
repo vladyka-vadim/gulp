@@ -114,8 +114,6 @@ function browsersync(done) {
 function htmlBuild() {
     return gulp.src(['./#src/**/*.html', "!" + './#src/_*.html'], {})
         .pipe(fileInclude())
-        .pipe(webpHtml())
-        .pipe(fileInclude())
         .pipe(gulp.dest(project_name + '/'))
         .pipe(browserSync.stream());
 }
